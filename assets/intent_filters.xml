@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Este XML declara que la app es un HOME launcher.
+    Android mostrará "Elegir launcher" cuando presiones Home.
+-->
+<queries>
+    <intent>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+    </intent>
+</queries>
+
+<!-- Intent filter para el activity principal -->
+<!-- Se inyecta en el AndroidManifest.xml por buildozer -->
+<intent-filter>
+    <action android:name="android.intent.action.MAIN" />
+    <category android:name="android.intent.category.HOME" />
+    <category android:name="android.intent.category.DEFAULT" />
+    <category android:name="android.intent.category.MONKEY" />
+</intent-filter>
